@@ -1,6 +1,6 @@
 ---
 name: content-writer
-description: How Sudo writes plain, casual Indonesian copy and carousels that read as one story. Use for every script, slide copy and caption for 3D BORE.
+description: How Sudo writes plain, casual Indonesian copy and carousels that read as one story, and how Sudo reports back to the owner. Use for every script, slide copy and caption for 3D BORE.
 ---
 
 # 3D BORE Content Writer Skill (Sudo)
@@ -107,7 +107,7 @@ Cerita singkat: Banyak yang bilang PLA nggak bisa dipakai di luar ruangan. Terny
 | 6 | Jadi, pakai material apa? | Tempat teduh: PLA cukup. Kena matahari langsung: PETG. Panas banget, misal di mobil: ASA. |
 | 7 | Bingung pilih material buat part kamu? | Kirim file kamu, kita bantu pilihkan. [LINK] |
 
-Note: this example is the shape to copy, not the facts. Script v4 corrected four wording points for accuracy (Arizona is hotter than Indonesia, rain was not tested, tiers, "masih kuat" instead of "tahan dijemur"). Always re-check claims against the research file.
+Note: this example is the shape to copy, not the facts. Script v4 corrected four wording points for accuracy (Arizona is hotter than Indonesia, rain was not tested, tiers, "masih kuat" instead of "tahan dijemur"). ASA is not offered by 3D BORE (register v2), so never copy that tier. Always re-check claims against the research file.
 
 ## 5. What to hand to the designer
 In the script file and the handoff, give the designer:
@@ -127,3 +127,62 @@ Tell the designer: keep the order and wording; if text does not fit, ask Sudo fo
 - [ ] Comparisons are explained, not left to the reader.
 - [ ] Still accurate: simplifying did not change what the source says. If a simpler word would overstate a finding, keep the careful version ("hampir nggak berubah", not "sama sekali nggak berubah").
 - [ ] Brief section 8 checklist passed.
+- [ ] Completion report sent to the owner (section 7): identity of the content first, then the summary.
+
+## 7. Completion report to the owner
+
+Every time you finish a piece of content (a research file, a script package or a revision), your **last message to the owner** is a short report. **Identity first, summary second.** The owner should know what this piece is before reading what you did, like the header of a book review.
+
+### Part 1: Identity of the content
+Give these lines, in this order:
+- **ID and working title**
+- **Post type**, then the series. Name what kind of post it is (table below).
+- **Format and length** (for example carousel, 7 slides; short video 9:16, 60 to 90 sec)
+- **Platform and publish date**
+- **Audience and goal**, one line each
+- **Version and status** (for example script v1, draft, facts not yet verified)
+
+### Part 2: What I did
+Five to ten short lines in plain words:
+- **Angle:** the "Cerita singkat" or key message in 2 or 3 sentences, and the verdict if there is one.
+- **Research:** the main sources used, and whether every claim has one.
+- **Package:** what was written and where (file names, not pasted content).
+- **Checks:** Facts verified yes or no (and why), brief section 8 and this skill's final check passed or not.
+- **Open items:** placeholders (`[LINK]`, `[ROUTE]`, `[PERMISSION]`) and questions for the owner or Acturus.
+- **Next:** who has it now, and the sheet cells Fore must update.
+- **If it is a revision:** what changed since the last version.
+
+Do not paste the script back. Link the files.
+
+### Post types
+
+| Series | Post type to name in Part 1 |
+|---|---|
+| MITOS ATAU FAKTA | Myth check (verdict post) |
+| NGOMONGIN OPEN-SAUCE | Open-source review (hardware project or software tool) |
+| BENERIN YUK | Repair walkthrough |
+| BEDAH PROYEK | Customer case study |
+| WEEKLY TECH RECAP | News recap |
+| BUILDERNERRY | Trending-files roundup |
+| One-off or new series | Explainer, or name it in your own words |
+
+### Template
+
+```
+IDENTITY
+ID / title:       <ID>, "<working title>"
+Post type:        <type from the table> (<series>)
+Format / length:  <format, slides or seconds>
+Platform / date:  <platform>, <day date>
+Audience / goal:  <one line> / <one line>
+Version / status: <script vN, draft or ready>
+
+WHAT I DID
+Angle:     <2 or 3 sentences>
+Research:  <main sources, claims all sourced or not>
+Package:   <files>
+Checks:    <facts verified yes/no, checklists>
+Open:      <placeholders and questions>
+Next:      <who has it, sheet cells for Fore>
+Changed:   <only for a revision>
+```
